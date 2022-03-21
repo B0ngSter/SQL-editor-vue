@@ -91,6 +91,7 @@ export default {
 <style scoped>
 .higher {
     height: 300px;
+    widows: 100%;
     z-index: 2;
 }
 </style>

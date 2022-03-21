@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="customBG">
-        <div class="flex flex-row">
-          <div class="w-2/12 min-h-screen">
+        <div class="flex flex-row flex-wrap">
+          <div class="smlaptop:w-2/12 w-full min-h-screen">
             <p class=" text-gray-500 text-center my-4">All Tables</p>
             <div v-for="(table, idx) in Object.keys(data)" :key="idx" class="tblBox p-5 m-1 cursor-pointer">
               <div class="flex justify-between" @click="openTable(table, idx)">
@@ -17,12 +17,12 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col w-10/12">
+          <div class="flex flex-col smlaptop:w-10/12 w-full">
             <div class="btnn flex justify-center">
               <button @click="execute">Execute</button>
             </div>
              <custom-codemirror
-              class="w-full mt-2"
+              class=" w-full mt-2"
               v-model="sqlEditorList.sql"
               :sqlEditorEnabled="true"
               :key="sqlEditorList.id"
