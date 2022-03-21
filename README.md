@@ -6,7 +6,7 @@ Example:- SELECT customerID, employeeID, orderDate FROM  orders;
 instead of writing down the SQL we can also use the UI to execute the query, click on the tables (on left hand side) and check the required rows and simply press execute button. the result will be presented on the bottom.
 
 
-Page load Time:- aprox 500ms~800ms on first load, after refreshing the load time will be improved.
+Page load Time:- aprox 700ms~900ms on first load, after refreshing the load time will be improved.
 I used the lighthouse tool also, got 98% performance.
 I used window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart to measure the Page load time. I didn't know about this method, I found it on stackoverflow.
 at first the Page load time was around 2 seconds, later I minified the CSS/JS using nuxt.js predefined method (nuxt.config.js file)
