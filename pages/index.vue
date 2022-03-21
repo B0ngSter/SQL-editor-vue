@@ -100,6 +100,7 @@ export default {
         }
       },
       execute () {
+        // backend is needed here to execute the sql on its full power
         this.dataToPresent = []
         if (this.tableData.length) {
           let selectKeys = ''
